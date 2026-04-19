@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- Khai báo HTML5 -->
+<html lang="vi"> <!-- Ngôn ngữ trang -->
+<head>
+    <meta charset="UTF-8"> <!-- Bộ mã ký tự -->
+    <title>Chi tiết sản phẩm</title> <!-- Tiêu đề tab -->
+</head>
+<body>
+
+    <header> <!-- header: phần đầu trang, chứa logo + menu -->
+        <nav> <!-- nav: khu vực điều hướng chính -->
+            <!-- Menu điều hướng -->
+        </nav>
+    </header>
+
+    <main> <!-- main: nội dung chính của trang -->
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb"> <!-- nav vì đây là điều hướng -->
+            <ol> <!-- ol vì breadcrumb có thứ tự cấp bậc -->
+                <li><a href="/">Trang chủ</a></li> <!-- link về home -->
+                <li><a href="/dien-thoai">Điện thoại</a></li>
+                <li>iPhone 16</li> <!-- trang hiện tại không cần link -->
+            </ol>
+        </nav>
+
+        <section> <!-- section: nhóm nội dung chi tiết sản phẩm -->
+
+            <!-- Khu vực chính gồm ảnh + info -->
+            <div class="product-container"> <!-- div: layout grouping -->
+
+                <!-- Ảnh sản phẩm -->
+                <section> <!-- section: nhóm ảnh sản phẩm -->
+                    <h2>Hình ảnh sản phẩm</h2> <!-- heading cho section -->
+                    <ul> <!-- ul: danh sách ảnh -->
+                        <li><img src="" alt="Ảnh 1"></li> <!-- img: hiển thị ảnh -->
+                        <li><img src="" alt="Ảnh 2"></li>
+                        <li><img src="" alt="Ảnh 3"></li>
+                        <li><img src="" alt="Ảnh 4"></li>
+                        <li><img src="" alt="Ảnh 5"></li>
+                    </ul>
+                </section>
+
+                <!-- Thông tin sản phẩm -->
+                <section> <!-- section: nhóm thông tin -->
+                    <h1>Tên sản phẩm</h1> <!-- h1: tiêu đề chính -->
+                    
+                    <p class="price">Giá</p> <!-- p: văn bản giá -->
+
+                    <div class="rating"> <!-- div: nhóm đánh giá -->
+                        <!-- sao đánh giá -->
+                    </div>
+
+                    <p class="description">Mô tả sản phẩm</p> <!-- mô tả -->
+                </section>
+
+            </div>
+
+            <!-- Bảng thông số kỹ thuật -->
+            <section> <!-- section: nhóm thông số -->
+                <h2>Thông số kỹ thuật</h2>
+                <table> <!-- table: dữ liệu dạng bảng -->
+                    <thead> <!-- tiêu đề bảng -->
+                        <tr>
+                            <th>Thông số</th> <!-- th: tiêu đề cột -->
+                            <th>Giá trị</th>
+                        </tr>
+                    </thead>
+                    <tbody> <!-- nội dung bảng -->
+                        <tr>
+                            <td>CPU</td> <!-- td: dữ liệu -->
+                            <td>A18</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Đánh giá / bình luận -->
+            <section> <!-- section: nhóm comment -->
+                <h2>Đánh giá</h2>
+
+                <article> <!-- article: mỗi bình luận độc lập -->
+                    <h3>Người dùng A</h3>
+                    <p>Nội dung bình luận</p>
+                </article>
+
+            </section>
+
+        </section>
+
+        <!-- Sidebar -->
+        <aside> <!-- aside: nội dung phụ (sản phẩm liên quan) -->
+            <h2>Sản phẩm tương tự</h2>
+
+            <ul> <!-- danh sách sản phẩm -->
+                <li>
+                    <article> <!-- mỗi sản phẩm là 1 block độc lập -->
+                        <h3>Tên sản phẩm</h3>
+                    </article>
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer> <!-- footer: chân trang -->
+        <!-- thông tin bản quyền, liên hệ -->
+    </footer>
+
+</body>
+</html>
