@@ -1,0 +1,18 @@
+Quan điểm “dùng `<div>` cho mọi thứ rồi thêm class là đủ” nghe có vẻ nhanh, nhưng về kỹ thuật lại bỏ qua nhiều lợi 
+ích quan trọng của semantic HTML.<br>
+
+Thứ nhất là SEO. Các công cụ tìm kiếm không chỉ đọc nội dung mà còn phân tích cấu trúc trang. Khi bạn dùng các thẻ 
+như `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, nội dung sẽ được phân loại rõ ràng: đâu là điều hướng, 
+đâu là nội dung chính, đâu là bài viết độc lập. Điều này giúp bot hiểu trang tốt hơn, tăng khả năng index và xếp hạng. 
+Nếu tất cả đều là `<div>`, bạn buộc phải dựa vào class, nhưng bot không “hiểu ngữ nghĩa” của class như con người.<br>
+
+Thứ hai là accessibility (khả năng truy cập). Các công cụ hỗ trợ như screen reader dựa vào semantic để đọc trang cho 
+người khiếm thị. Ví dụ, khi gặp `<nav>`, họ có thể nhảy nhanh đến menu; khi gặp `<main>`, họ biết đây là nội dung chính. 
+Nếu dùng toàn `<div>`, trải nghiệm sẽ kém hơn rất nhiều vì mất đi các “mốc điều hướng” tự nhiên.<br>
+
+Ví dụ cụ thể: một danh sách bài viết nếu dùng `<article>` cho từng item, screen reader có thể thông báo “bài viết 1, 
+bài viết 2…”, còn công cụ tìm kiếm hiểu đây là các nội dung độc lập. Nếu chỉ dùng `<div>`, bạn mất toàn bộ ý nghĩa này.<br>
+
+Tuy nhiên, `<div>` vẫn rất hữu ích trong các trường hợp layout thuần túy, ví dụ: wrapper để chia cột bằng Flexbox/Grid, 
+hoặc nhóm các phần tử không có ý nghĩa ngữ nghĩa riêng. Nói cách khác, semantic HTML không thay thế `<div>`, mà giúp bạn
+dùng đúng thẻ cho đúng mục đích.
